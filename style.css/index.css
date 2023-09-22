@@ -1,37 +1,35 @@
-p {
-    font-size: small;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: blueviolet;
-    background-color: aqua;
-}
 nav {
     background-color: black;
     color: white;
     padding: 10px;
     width: 100%;
     display: flex;
-    gap: 1rem;
+    justify-content: space-around;
+    gap: 2rem;
 }
-nav a {
-    color:white;
+a {
     text-decoration: none;
+    color: white;
 }
-nav span {
-margin-left: auto;
+input[class~="search"] {
+    display: flex;
+    background-color: rgb(229,225,217);
+    max-height: 1rem;
+    justify-self: center;
+    align-self: center;
+    padding: 0.25em 0.6em;
+    border-radius: 0.3rem;
+    border: 1px solid #d3d6e4;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0 0 0 /0.15);
+    width: 30%;
+   
 }
-h3 {
-    font-size: 24px;
-    font-family: cursive;
-    color:darkorchid;
+header {
+    display: flex;
+    justify-content: space-around;
 }
-table {
-    background-color: aliceblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 35px;
-}
-
-h2 {
-    font-size: 110px;
-    font-family:fantasy;
-    color: indigo;
+::placeholder {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
