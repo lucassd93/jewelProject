@@ -64,7 +64,7 @@
     text-align: center;
     color: #fff;
 }
-.pie-pagina .grupo-2 small{
+.pie-pagina .grupo-2 p{
     font-size: 14px;
 }
 @media screen and (max-width:800px){
