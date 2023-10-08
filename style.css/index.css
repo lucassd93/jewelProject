@@ -33,3 +33,163 @@ header {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.nav1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.nav2 {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.nav1 a {
+    text-decoration: none;
+    color: white;
+}
+.nav2 a {
+    text-decoration: none;
+    color: black;
+}
+input[class~="search"] {
+    display: flex;
+    background-color: rgb(229,225,217);
+    max-height: 1rem;
+    justify-self: center;
+    align-self: center;
+    padding: 0.25em 0.6em;
+    border-radius: 0.3rem;
+    border: 1px solid #d3d6e4;
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0 0 0 /0.15);
+    width: 30%;
+   
+}
+header {
+    display: flex;
+    justify-content: space-around;
+}
+::placeholder {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+
+.header {
+    background: rgba(255,255,255,0.20);
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.nav3 ul {
+    list-style: none;
+}
+.header .nav3 ul li {
+    float: left;
+    position: relative;
+}
+.header .nav3 ul li a {
+    background-color: whitesmoke;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+    box-shadow: 0 2px 3px rgba(0 0 0 /0.15);
+}
+.header .nav3 ul li a:hover {
+    background-color:rgb(130, 118, 118);
+}
+.header .nav3 ul li ul {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    background-color: rgba(255,255,255,0.20);
+    display: none;
+}
+.header .nav3 ul li ul li a {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.header .nav3 ul li ul li ul {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+.header .nav3 ul li ul li {
+    width: 100%;
+}
+.header .nav3 ul li:hover > ul {
+ display: initial;
+}
+.carrousel{
+    width:90% ;
+    max-width: 120em;
+    padding: 2em;
+    overflow: hidden;
+    border-radius: 1em;
+    background-color: #e0e0e0;
+    box-shadow: 1em 1em 2em #bebebe;
+}
+.carrousel .grande {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    transition: all .5s ease;
+    transform: translateX(0%);
+    border-radius: 1em;
+    background-color: #e0e0e0;
+    box-shadow: 1em 1em 2em #bebebe, -1em -1em -2em#ffffff;
+}
+.carrousel .img {
+    width: calc( 100% /2 - 2em);
+    min-height: 10vh;
+    border-radius: 1em;
+    background-color: #e0e0e0;
+    box-shadow: 1em 1em 2em #bebebe, -1em -1em -2em#ffffff;
+}
+.carrousel .puntos {
+    width: 100%;
+    padding: 0.4em;
+    margin: 1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    border-radius: 1em;
+    background-color: black;
+    list-style: none;
+}
+.carrousel .punto.activo {
+    background-color: antiquewhite;
+}
