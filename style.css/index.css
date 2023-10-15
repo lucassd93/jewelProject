@@ -224,3 +224,18 @@ body {
     list-style: none;
     font-size: 1.1em;
 }
+iframe {
+    margin-left: 25%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.atencion {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(8,1fr);
+    padding: 1em;
+    gap: 1em;
+}
+section h1 {
+    text-align: center;
+}
