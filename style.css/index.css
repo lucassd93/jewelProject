@@ -1,4 +1,3 @@
-
 a {
     text-decoration: none;
     color: white;
@@ -40,6 +39,7 @@ input[class~="search"] {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
+    box-shadow: 0 2px 3px rgba(255 255 255);
 }
 .nav2 {
     background-color: white;
@@ -97,7 +97,6 @@ body {
     gap: 2rem;
 } */
 .header {
-    background: rgba(255,255,255,0.20);
     padding: 0 10%;
     display: flex;
     align-items: center;
@@ -131,7 +130,6 @@ body {
     position: absolute;
     left: 0;
     width: 300px;
-    background-color: rgba(255,255,255,0.20);
     display: none;
 }
 .header .nav3 ul li ul li a {
@@ -197,7 +195,7 @@ body {
     list-style: none;
 }
 .carrousel .punto.activo {
-    background-color: antiquewhite;
+    background-color: grey;
 }
 /* consultas */
 .form {
