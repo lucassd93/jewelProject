@@ -1,5 +1,4 @@
 nav {
-    background-color: black;
     color: white;
     padding: 10px;
     width: 100%;
@@ -48,6 +47,7 @@ input[class~="search"] {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
+    box-shadow: 0 2px 3px rgba(255 255 255);
 }
 .nav2 {
     background-color: white;
@@ -57,6 +57,7 @@ input[class~="search"] {
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
+    box-shadow: 0 2px 3px rgba(0 0 0 /0.15);
 }
 .nav1 a {
     text-decoration: none;
@@ -83,6 +84,7 @@ input[class~="search"] {
 header {
     display: flex;
     justify-content: space-around;
+    margin-top: 1rem;
 }
 ::placeholder {
     font-family: "Font Awesome 5 Free";
@@ -95,12 +97,12 @@ body {
 
 
 .header {
-    background: rgba(255,255,255,0.20);
     padding: 0 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1000;
+    z-index: -10;
+    margin-bottom: 100px;
 }
 .nav3 ul {
     list-style: none;
@@ -126,7 +128,6 @@ body {
     position: absolute;
     left: 0;
     width: 300px;
-    background-color: rgba(255,255,255,0.20);
     display: none;
 }
 .header .nav3 ul li ul li a {
@@ -191,7 +192,7 @@ body {
     list-style: none;
 }
 .carrousel .punto.activo {
-    background-color: antiquewhite;
+    background-color: grey;
 }
 .form {
     width: 50em;
@@ -229,6 +230,69 @@ iframe {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+.atencion {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(8,1fr);
+    padding: 1em;
+    gap: 1em;
+}
+section h1 {
+    text-align: center;
+}
+/* login */
+.login_css {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.login_form {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+.title {
+    color: #252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+form label {
+    margin-bottom: 35px;
+}
+form label .fa-solid {
+    font-size: 20px;
+    color: #cb232c;
+    margin-right: 10px;
+}
+form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #ce1d61;
+    padding: 0 5px;
+    font-size: 18px;
+}
+form label input::placeholder {
+    color: rgba(37 37 37 /0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+form .link {
+    color: #252525;
+    margin-bottom: 25px;
+}
+form button {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #cb232c, #ce1d61);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
 .atencion {
     display: grid;
     list-style: none;
