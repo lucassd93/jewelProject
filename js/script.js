@@ -56,3 +56,17 @@ function ajax_get(url, callback) {
     document.getElementById("image").innerHTML = html;
   });
 
+function mostrar() {
+  document.getElementById('img').style.display = 'block';
+}
+function ocultar() {
+  document.getElementById('img').style.display = 'none';
+}
+
+// buscador
+btn.onclick = function() {
+  var buscar = document.getElementById('buscar').valud;
+  if (buscar == 'hola') {
+    
+  }
+}

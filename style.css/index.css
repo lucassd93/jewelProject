@@ -1,12 +1,4 @@
-nav {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-}
+
 a {
     text-decoration: none;
     color: white;
@@ -41,7 +33,7 @@ input[class~="search"] {
     box-sizing: inherit;
 }
 .nav1 {
-    background-color: black;
+    background: linear-gradient(to right, #dd35ab, #b9539b);
     color: white;
     padding: 10px;
     width: 100%;
@@ -57,6 +49,7 @@ input[class~="search"] {
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
+    border-bottom: 1px #b9539b solid;
 }
 .nav1 a {
     text-decoration: none;
@@ -83,6 +76,7 @@ input[class~="search"] {
 header {
     display: flex;
     justify-content: space-around;
+    padding-top: 2rem;
 }
 ::placeholder {
     font-family: "Font Awesome 5 Free";
@@ -93,14 +87,25 @@ body {
     min-height: 100vh;
 }
 
-
+/* nav {
+    background-color: #b9539b;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+} */
 .header {
     background: rgba(255,255,255,0.20);
     padding: 0 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     z-index: 1000;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    position: relative;
 }
 .nav3 ul {
     list-style: none;
@@ -120,7 +125,7 @@ body {
     box-shadow: 0 2px 3px rgba(0 0 0 /0.15);
 }
 .header .nav3 ul li a:hover {
-    background-color:rgb(130, 118, 118);
+    background-color:#f699da;
 }
 .header .nav3 ul li ul {
     position: absolute;
@@ -172,6 +177,7 @@ body {
     border-radius: 1em;
     background-color: #e0e0e0;
     box-shadow: 1em 1em 2em #bebebe, -1em -1em -2em#ffffff;
+    z-index: 0;
 }
 .carrousel .puntos {
     width: 100%;
@@ -193,12 +199,13 @@ body {
 .carrousel .punto.activo {
     background-color: antiquewhite;
 }
+/* consultas */
 .form {
     width: 50em;
-    background-color: #24303c;
+    background: linear-gradient(to right, #dd35ab, #b9539b);
     padding: 3em;
     margin: auto;
-    margin-top: auto;
+    margin-top: 5rem;
     box-sizing: border-box;
     border-radius: 1em;
     margin-bottom: 10em;
@@ -210,13 +217,15 @@ body {
     border-radius: 1em;
 }
 .boton {
-    margin-left: 50%;
+    margin-left: 45%;
     width: 10em;
     height: 3em;
+    background-color: #f66dcd;
+    border-radius: 10px;
 }
 .form h4 {
     color: antiquewhite;
-    margin-left: 50%;
+    margin-left: 45%;
 }
 .compras {
     text-align: center;
@@ -229,13 +238,92 @@ iframe {
     margin-top: 2em;
     margin-bottom: 2em;
 }
+/* horarios de atencion */
+section h1 {
+    margin-top: 3rem;
+}
+.negrita {
+    font-weight: 800;
+}
 .atencion {
     display: grid;
     list-style: none;
     grid-template-columns: repeat(8,1fr);
     padding: 1em;
     gap: 1em;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
 }
 section h1 {
     text-align: center;
 }
+/* login */
+.login_css {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.login_form {
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+.title {
+    color: #252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+form label {
+    margin-bottom: 35px;
+}
+form label .fa-solid {
+    font-size: 20px;
+    color: #dd35ab;
+    margin-right: 10px;
+}
+form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #ce1d61;
+    padding: 0 5px;
+    font-size: 18px;
+    background-color: whitesmoke;
+}
+form label input::placeholder {
+    color: rgba(37 37 37 /0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+form .link {
+    color: #252525;
+    margin-bottom: 25px;
+}
+form button {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #dd35ab, #b9539b);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/* gatos */
+#img {
+    display: none;
+}
+#boton {
+    margin-left: 45%;
+    box-sizing: border-box;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #dd68ba;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
