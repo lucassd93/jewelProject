@@ -16,8 +16,14 @@ input[class~="search"] {
     border: 1px solid #d3d6e4;
     text-align: center;
     box-shadow: 0 2px 3px rgba(0 0 0 /0.15);
-    width: 30%;
-   
+    width: 30%;   
+}
+article {
+    text-align: center;
+}
+.centrar {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .header {
     display: flex;
@@ -152,12 +158,14 @@ body {
 }
 .carrousel{
     width:90% ;
-    max-width: 120em;
+    max-width: 30em;
     padding: 2em;
     overflow: hidden;
     border-radius: 1em;
     background-color: #e0e0e0;
     box-shadow: 1em 1em 2em #bebebe;
+    margin-left: 30%;
+    margin-bottom: 2em;
 }
 .carrousel .grande {
     width: 200%;
@@ -165,7 +173,7 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
+    padding: 1em;
     transition: all .5s ease;
     transform: translateX(0%);
     border-radius: 1em;
@@ -182,8 +190,6 @@ body {
 }
 .carrousel .puntos {
     width: 100%;
-    padding: 0.4em;
-    margin: 1em 0 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -194,11 +200,11 @@ body {
     height: 2em;
     margin: 1em 1em 0;
     border-radius: 1em;
-    background-color: black;
+    background-color: #b9539b;
     list-style: none;
 }
 .carrousel .punto.activo {
-    background-color: grey;
+    background-color: whitesmoke;
 }
 /* consultas */
 .form {
